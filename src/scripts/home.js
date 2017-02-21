@@ -11,11 +11,10 @@
   $('#home').style.height=window.innerHeight+'px';
   window.onresize=function(){
     $('#home').style.height=window.innerHeight+'px';
-    console.log($('#home').style.height);
+    //console.log($('#home').style.height);
   }
   $('#contact').style.minHeight=window.innerHeight+'px';
   window.onresize=function(){
     $('#contact').style.minHeight=window.innerHeight+'px';
-    console.log($('#contact').style.minHeight);
   }
 })()
