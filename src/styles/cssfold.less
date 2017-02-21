@@ -24,6 +24,20 @@
   z-index:1;
 }
 
+.add{
+  &:after{
+    content: '\E803';
+    font-family: '_school';
+    font-size: 30px;
+    color: #f90;
+    display: block;
+    margin: -14px -3px;
+  }
+  >span{
+    display:none !important;
+  }
+}
+
 .about{
   img{
     border:6px solid @color-blue;
@@ -33,7 +47,7 @@
   position:relative;
   height:500px;
   border:5px solid @color-white;
-  @media (max-width:(@screen-sm-min - 1)) {
+  @media (max-width:(@screen-md-min - 1)) {
     margin-top:15px;
     border-radius:5px;
   }

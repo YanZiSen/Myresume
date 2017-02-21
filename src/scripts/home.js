@@ -1,7 +1,7 @@
 /**
  * Created by yanning on 2017/2/15.
  */
-(function(window){
+(function(){
   window.$=document.documentElement.$=function(selector){
     var result=(this===window?document:this).querySelectorAll(selector);
     return result.length===0?null:
@@ -13,4 +13,9 @@
     $('#home').style.height=window.innerHeight+'px';
     console.log($('#home').style.height);
   }
-})(window)
+  $('#contact').style.minHeight=window.innerHeight+'px';
+  window.onresize=function(){
+    $('#contact').style.minHeight=window.innerHeight+'px';
+    console.log($('#contact').style.minHeight);
+  }
+})()

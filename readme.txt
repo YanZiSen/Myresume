@@ -66,6 +66,7 @@
             url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
             url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 
+      replace不修改原串,返回新串;
 
      测试与属性是否支持的写法
      There is no issue to check for css property support, but what to do if you need to check for css value?

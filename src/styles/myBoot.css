@@ -574,15 +574,31 @@ ol ol {
   bottom: 0;
   z-index: 1;
 }
+.add:after {
+  content: '\E803';
+  font-family: '_school';
+  font-size: 30px;
+  color: #f90;
+  display: block;
+  margin: -14px -3px;
+}
+.add > span {
+  display: none !important;
+}
 .about img {
   border: 6px solid #3F51B5;
 }
 .product .product-item {
   position: relative;
-  height: 500px;
+  height: 600px;
   border: 5px solid #FFF;
 }
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
+  .product .product-item {
+    height: 500px;
+  }
+}
+@media (max-width: 991px) {
   .product .product-item {
     margin-top: 15px;
     border-radius: 5px;
@@ -1092,7 +1108,7 @@ ol ol {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #cccccc;
+  background-color: #333333;
 }
 .navbar-default .navbar-toggle > .icon-bar {
   background-color: #f90;
