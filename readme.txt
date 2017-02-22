@@ -68,6 +68,8 @@
 
       replace不修改原串,返回新串;
 
+    自执行函数后面要有分号；
+
      测试与属性是否支持的写法
      There is no issue to check for css property support, but what to do if you need to check for css value?
 
